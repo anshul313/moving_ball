@@ -1,0 +1,42 @@
+.box{
+    width: 400px;
+    height: 200px;
+    border: 10px solid black;
+    margin: auto auto;
+    background-color: yellowgreen;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    animation: moving 5s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 350px;
+        background-color: aqua;
+    }
+    50%{
+        top: 150px;
+        left: 350px;
+        background-color: yellow;
+    }
+    75%{
+        top: 150px;
+        left: 0px;
+        background-color: violet;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+    }
+}
